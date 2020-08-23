@@ -2,15 +2,20 @@ import React from 'react'
 import './main-content.scss'
 import MainNavbar from "../navbar/Main-Navbar";
 import Footer from "../footer/Footer";
+import Body from "../body/Body";
+
 class  MainContent extends React.Component{
 
     render() {
 
         return (
-            <main>
+            <div className="wrapper">
+         <div className="main">
             <MainNavbar/>
+            <Body/>
+            </div>
             <Footer/>
-            </main>
+            </div>
         )
     }
 

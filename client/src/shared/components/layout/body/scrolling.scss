@@ -1,0 +1,18 @@
+.container-scroll {
+  width: 500%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.panel{
+  width: 100%;
+  height: 100vh;
+}
+.insta{
+  font-family: 'Alfa Slab One', cursive;
+  background: #333;
+  color: #e7e2df;
+  width: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+
+h1{
+  text-align:center;
+  margin-bottom:100px;
+}
+
+.Skew{
+  position:relative;
+}
+
+.Skew:hover .Phone-ImgI {
+  transform: rotate(9deg) skewX(-39deg) skewY(25deg) scale(2);
+  margin-top: 100px;
+  animation-play-state: paused;
+}
+
+.Skew:hover .Phone-Img {
+  animation-play-state: paused;
+}
+
+.Skew:hover .Phone-Img-Shadow {
+  animation-play-state: paused;
+}
+
+.Phone-Img {
+  background-image: url('https://i67.servimg.com/u/f67/11/45/27/55/home-i11.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: -58px;
+  left: 0;
+  z-index: 2;
+  animation-name: UpDown;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: normal;
+  margin-top: 70px;
+}
+
+.Phone-ImgI {
+  background-image: url('https://i67.servimg.com/u/f67/11/45/27/55/home-i12.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: -58px;
+  left: 0;
+  z-index: 3;
+  animation-name: UpDown2;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: normal;
+  transition-duration: 1s;
+  margin-top: 70px;
+}
+
+.Phone-Img-Shadow {
+  background-image: url('https://i67.servimg.com/u/f67/11/45/27/55/home-i10.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: -58px;
+  left: 0;
+  animation-name: ShadowUp;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: normal;
+  margin-top: 70px;
+}
+
+@keyframes UpDown {
+  0% {
+    top: -58px;
+  }
+
+  50% {
+    top: -80px;
+  }
+
+  100% {
+    top: -58px;
+  }
+}
+
+@keyframes UpDown2 {
+  0% {
+    top: -58px;
+  }
+
+  50% {
+    top: -90px;
+  }
+
+  100% {
+    top: -58px;
+  }
+}
+
+@keyframes ShadowUp {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(0.8);
+    top: -48px;
+    left: -10px;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
+
+}
+footer{
+  width: 100%;
+  background: #111;
   margin: 0;
   padding:0;
   box-sizing: border-box;
   font-family: 'Poppins' ,sans-serif;
   color: #d9d9d9;
 }
-footer{
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  background: #111;
-}
-.main-content{
+.footer-main-content{
   display: flex;
+  justify-items: center;
+  text-align: center;
   .box{
     flex-basis: 50%;
     padding: 10px 20px;
@@ -22,18 +23,20 @@ footer{
       font-weight: 600;
       text-transform: uppercase;
     }
-    .content{
+    .footer-contents{
       margin: 12px 0 0 0;
     }
   }
 }
 .left{
-  .content{
+  .footer-contents{
     p{
       text-align: justify;
     }
     .social{
       margin: 20px 0 0 0;
+      display: flex;
+      justify-content: space-evenly;
       a{
         padding: 0 2px;
         span{
@@ -53,3 +56,12 @@ footer{
     }
   }
 }
+@media (min-width: 10px) and (max-width: 768px) {
+  .footer-main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
