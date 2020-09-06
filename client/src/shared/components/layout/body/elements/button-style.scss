@@ -1,0 +1,41 @@
+@import "src/index";
+$red: #e74c3c;
+.main-button {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid $red;
+  border-radius: 2em;
+  color: $red;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 1.6em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  &:focus{
+    outline: 0;
+  }
+  &:hover{
+    outline: 0;
+    color: black;
+  }
+}
+
+.third {
+  border-color: $color-primary;
+  color: white;
+  box-shadow: 0 0 40px 40px $color-primary inset, 0 0 0 0 $color-primary;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 $color-primary inset, 0 0 10px 4px $color-primary;
+  }
+
+}

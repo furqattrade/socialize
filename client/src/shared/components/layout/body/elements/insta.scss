@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
 .instagram {
-  margin:30% auto;
+  top:90px;
+  margin:0 auto;
   width: 200px;
   height: 200px;
   background: #ccc;
@@ -12,9 +14,6 @@
   border-width: 5px 0;
   position: relative;
   border-width: 0 0 6px;
-  -moz-box-shadow: inset 0px 0px 30px #000;
-  -webkit-box-shadow: inset 0px 0px 30px #000;
-  box-shadow: inset 0px 0px 30px #000000, 0px -137px 300px #ffffff;
   background: -moz-radial-gradient(center, ellipse cover, #f4f1ec 0%, #f4f1ec 31%, #785e51 100%);
   /* FF3.6+ */
 
@@ -167,7 +166,6 @@
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
-  background: #333;
   position: relative;
   z-index: 2;
   -moz-box-shadow: 1px 7px 18px #333333, 0 -102px 46px rgba(255, 255, 255, 0.4), inset 0px 0px 25px #000000, inset 0px -41px 5px rgba(0, 0, 0, 0.5), inset 0px 48px 11px rgba(255, 255, 255, 0.4);
@@ -201,9 +199,9 @@
   left: -1000px;
   right: 0;
   z-index: 300;
-  background: rgba(255, 255, 255, 0);
+
 }
-body:hover .flash {
+.instagram:hover .flash {
   -webkit-animation: big 0.2s ease-out 1s 3;
   -moz-animation: big 0.2s ease-out 1s 3;
   -o-animation: big 0.2s ease-out 1s 3;
@@ -263,4 +261,14 @@ body:hover .flash {
   100% {
     opacity: rgba(255, 255, 255, 0);
   }
+}
+
+.seo-title{
+  width: 100%;
+  margin-top: 40px ;
+  font-size: 5rem;
+  font-family: 'Playball', cursive;
+  display: flex;
+  justify-content: center;
+
 }

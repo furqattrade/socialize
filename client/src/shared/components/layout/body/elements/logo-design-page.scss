@@ -1,0 +1,110 @@
+
+.logo-design-page{
+  background-image: url(../../../../images/right-background.png);
+  background-size:cover ;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  .logo-page-wrapper{
+    width: 100%;
+    margin: 0;
+    .logo-title-wrapper{
+      margin: 60px auto;
+  .logo-title{
+    font-family: Roboto sans-serif;
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .logo-sub-title{
+    font-family: Roboto sans-serif;
+    font-size:2rem ;
+    width: 100%;
+    font-weight: 600;
+  }
+    }
+    .logo-content{
+      display: flex;
+      margin: 0 100px;
+      justify-content: space-between;
+      align-items: start;
+      width: 100%;
+      .text-part{
+        :nth-child(1){
+          font-size: 2rem;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 400;
+        }
+        :nth-child(2){
+          font-size: 3rem;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+        }
+      }
+      .carousel-part{
+        .react-multi-carousel-list  {
+          overflow: hidden;
+          justify-content: start;
+          align-items: start;
+          width: 700px;
+          height: 500px;
+          .single-image{
+            justify-content: start;
+            img{
+              width: 700px;
+              height: 400px;
+              background-color: inherit;
+            }
+          }
+        }
+      }
+      .info-button{
+        justify-content: center;
+      .logo-page-button{
+        margin: 0px;
+        padding: 0.5em 1em;
+        font-size: 1.2rem;
+      }
+      }
+
+    }
+
+  }
+  @media all and (max-width: 500px) {
+    .carousel-part{
+
+      .react-multi-carousel-list  {
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        width: 300px!important;
+        height: 200px!important;
+        .single-image{
+          img{
+            width: 300px!important;
+            height: 200px!important;
+          }
+        }
+      }
+    }
+  }
+  @media all and (max-width: 370px) {
+    .carousel-part{
+      .react-multi-carousel-list  {
+        overflow: hidden;
+        justify-content: end;
+        align-items: center;
+        width: 150px!important;
+        height: 100px!important;
+        .single-image{
+          img{
+            width: 150px!important;
+            height: 100px!important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -4,10 +4,7 @@ import MainNavbar from "../navbar/Main-Navbar";
 import Footer from "../footer/Footer";
 import Body from "../body/Body";
 
-class  MainContent extends React.Component{
-
-    render() {
-
+function  MainContent (){
         return (
             <div className="wrapper">
          <div className="main">
@@ -17,9 +14,6 @@ class  MainContent extends React.Component{
             <Footer/>
             </div>
         )
-    }
-
-
 }
 
 export default MainContent

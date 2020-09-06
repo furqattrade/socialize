@@ -3,8 +3,8 @@ import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import Insta from "./elements/Insta";
 import './scrolling.scss'
-import Phone from "./elements/Phone";
-
+import WebPagePart from "./elements/WebPagePart";
+import LogoDesignPage from "./elements/LogoDesignPage";
 if (typeof window !== `undefined`) {
     gsap.registerPlugin(ScrollTrigger)
     gsap.core.globals("ScrollTrigger", ScrollTrigger)
@@ -25,14 +25,14 @@ function Scrolling() {
         let sections = revealRef.current
         useEffect(()=>{
             gsap.to(sections, {
+                duration:5,
                 xPercent: -100 * (sections.length - 1),
-                ease: "none",
                 scrollTrigger: {
                     trigger: containerRef.current,
                     pin: true,
                     scrub: 1,
+                    ease: "elastic.out(1, 0.3)",
                     snap: 1 / (sections.length - 1),
-                    // base vertical scrolling on how wide the container is so it feels more natural.
                     end: () => "+=" + containerRef.current.offsetWidth
                 }
             });
@@ -40,25 +40,14 @@ function Scrolling() {
 
         return(
                 <div className="container-scroll" ref={containerRef} >
-                                <section ref={addToRefs}  className="panel insta">
-                                   <div className="row">
-                                       <div className="col-md-6">
-                                       <Insta/>
-                                       </div>
-                                       <div className="col-md-6"></div>
-                                   </div>
+                                <section ref={addToRefs}  className="panel  insta ">
+                                  <Insta/>
                                 </section>
                                 <section  ref={addToRefs}  className="panel  ">
-                                 <Phone/>
+                                    <WebPagePart/>
                                 </section>
-                                <section style={{backgroundColor:"green"}} ref={addToRefs}  className="panel">
-                                    <h1 style={{color:"black"}}>Hello</h1>
-                                </section>
-                                <section style={{backgroundColor:"yellow"}} ref={addToRefs}  className="panel">
-                                    <h1 style={{color:"black"}}>Hello</h1>
-                                </section>
-                                <section style={{backgroundColor:"red"}} ref={addToRefs}  className="panel">
-                                    <h1 style={{color:"black"}}>Hello</h1>
+                                <section  ref={addToRefs}  className="panel">
+                                   <LogoDesignPage/>
                                 </section>
                 </div>
         )
